@@ -204,6 +204,7 @@ header nav a:hover
 {
 	width: 100%;
 	padding-bottom: 60px;
+	padding-top: 100px;
 }
 	
 .header_section h2
@@ -427,13 +428,11 @@ figcaption .eye
 	height: 800px;
 }
 
-
-
 #contact iframe
 {
+	position: absolute;
 	width: 100%;
 	height: 800px;
-	position: absolute;
 	border: 0;   
 }
 
@@ -496,7 +495,7 @@ textarea
 	border: 1px solid rgba(200, 200, 200, 0.6);
 }
 
-input, textarea[type="text"] 
+input, textarea
 {
     font-family: 'roboto' , sans-serif;
     font-weight: bold;
@@ -543,8 +542,7 @@ form {
 
 h1 {
 	font-size: 150%;
-}
-
+	}
 }
 
 @media all and (max-width: 747px) {
@@ -565,7 +563,6 @@ h1 {
 		flex-wrap: wrap;
 		margin: 0 0 10px 0;
 		padding: 0;
-
 	}
 
 	header nav ul li{
@@ -581,6 +578,16 @@ h1 {
 		width: 100%;
 	}
 
+	form{
+		position: relative;
+		top: 700px;
+		margin: 0 auto;
+		background-color: rgba(52, 145, 178, 0.4);
+	}
+
+	#contact{
+		height: 800px;
+	}
 }
 
 @media all and (max-width: 555px) {
@@ -637,11 +644,13 @@ h1 {
 		padding: 4%;
 	}
 
+	form{
+		width: 100%;
+	}
 }
 
 @media all and (max-width: 355px) {
 	header nav ul li a{
-		;
 		padding: 5px;
 	}
 
@@ -660,5 +669,4 @@ h1 {
 	body{
 		font-size: 1em;
 	}
-
 }
