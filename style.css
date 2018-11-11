@@ -4,7 +4,6 @@ body
 {
 	font-family: 'roboto' , sans-serif;
 	width: 100%;
-	max-width: ;
 	margin: 0 auto;
 	color: rgb(104, 108, 113);
 	font-size: 1.2em;
@@ -201,7 +200,7 @@ header nav a:hover
 
 /* SERVICES */
 
-.services
+#services
 {
 	width: 100%;
 	padding-bottom: 60px;
@@ -324,7 +323,6 @@ header nav a:hover
 	background-color: rgb(52,145,178);
 	color: white;
 	border-bottom: 3px solid rgb(56, 114, 141);
-	position: ;
 	cursor: pointer;
 }
 
@@ -355,6 +353,7 @@ header nav a:hover
 
 .portfolio
 {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
@@ -365,34 +364,32 @@ header nav a:hover
 figure img
 {
 	width: 100%;
+	position: absolute;
 }
 
 figure
 {
 	position: relative;
 	width: 300px;
-	
+	height: 200px;
 	overflow: hidden;
 	transition: opacity 1s;
-	
 }
 
 figcaption
 {
 	position: absolute;
-	top: 60%;
 	background: rgba(0, 0, 0, 1);
 	color: white;
 	opacity: 0;
 	width: 100%;
+	bottom: 0px;
 	transition: opacity 1s;
-
 }
 
 figure:hover figcaption
 {
   opacity: 0.8;
-  bottom: 0;
   cursor: pointer;
 }
 
@@ -500,7 +497,7 @@ input, textarea[type="text"]
 {
     font-family: 'roboto' , sans-serif;
     font-weight: bold;
-    color: rgba(104, 108, 113);
+    color: rgb(104, 108, 113);
     opacity: 0.8;
 }
 
@@ -552,25 +549,8 @@ h1 {
 		flex-direction: column;
 	}
 
-	header nav{
-		padding-top: ;
-	}
-
-
 	#banniere {
 		height: 350px;
-	}
-
-	.fleches_banniere{
-		display: ;
-	}
-
-	.text_header {
-		color: ;
-	}
-
-	.banniere_text h1{
-		color: ;
 	}
 
 	.banniere_text {
@@ -591,7 +571,7 @@ h1 {
 
 	header nav a:hover{
 		border-top: none;
-		padding-top: none;
+		padding-top: 0px;
 	}
 
 	.body_services{
@@ -678,4 +658,4 @@ h1 {
 		font-size: 1em;
 	}
 
-lalala
+}
