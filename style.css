@@ -61,6 +61,7 @@ header nav ul
 {
   display: flex;
   list-style-type: none;
+  padding: 0;
 }
 
 header nav a 
@@ -161,9 +162,9 @@ header nav a:hover
 }
 
   .precedent
-  {
+{
   	border-radius: 0px 90px 90px 0px;
- }
+}
 
     .suivant
 {
