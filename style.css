@@ -90,11 +90,8 @@ header nav a:hover
 {
 	background: url('web_agency/images/slider/bg1.jpg') no-repeat center;
 	background-size: cover;
-	
 	width: 100%;
 	height: 550px;
-
- 	
 	position: relative;
 	border-bottom: 3px solid rgba(0, 0, 0, 0.1);
 	
@@ -102,17 +99,12 @@ header nav a:hover
 
 .banniere_text
 {
+	position: absolute;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	color: white;
 	padding-left: 10%;
 	padding-top: 7%;
-}
-
-.banniere_text p
-{
-	margin-bottom: 10px;
 }
 
 .banniere_text span
@@ -190,7 +182,6 @@ header nav a:hover
 
 .espacement_2
 {
-	
 	width: 100%;
 	height: 120px;
 	margin: auto;
@@ -235,7 +226,6 @@ header nav a:hover
 
 .box_services_logo
 {
-	width: 60px;
 	position: relative;
 	align-self: center;
 }
@@ -279,13 +269,11 @@ header nav a:hover
 .details_services
 {
 	padding-top: 60px;
-	margin: 0 ;
-	padding-bottom: 40px;
-	max-width: 45%;
+	max-width: 50%;
 }
 
 
-/* PORTFOLIO*/
+/* MENU PORTFOLIO*/
 
 #Portfolio
 {
@@ -299,7 +287,6 @@ header nav a:hover
 	display: flex;
 	justify-content: center;
 	padding: 30px;
-	position: relative;
 	list-style-type: none;
 	height: 60px;
 }
@@ -353,6 +340,8 @@ header nav a:hover
 	border-radius: 0px 10px 10px 0px;
 }
 
+/* PORTFOLIO */
+
 .portfolio
 {
 	position: relative;
@@ -366,14 +355,12 @@ header nav a:hover
 figure img
 {
 	width: 100%;
-	position: ;
 }
 
 figure
 {
 	position: relative;
 	width: 300px;
-	height: ;
 	overflow: hidden;
 	transition: opacity 1s;
 }
@@ -387,6 +374,11 @@ figcaption
 	width: 100%;
 	bottom: 3%;
 	transition: opacity 1s;
+}
+
+figcaption span
+{
+	font-weight: bold;
 }
 
 figure:hover figcaption
@@ -408,11 +400,7 @@ figcaption .eye
 	position: absolute;
 	top: -20%;
 	left: 70%;
-	margin: ;
 }
-
-
-
 
 .text2
 {
@@ -473,7 +461,6 @@ form
 	background: rgba(255, 255, 255, 0.7);
 	margin-right: 10%;
 	width: 350px;
-	height: 70%;
 	padding: 15px;
 	border-radius: 5px;
 }
