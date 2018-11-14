@@ -492,39 +492,35 @@ figcaption .eye
 
 /* CONTACT */
 
-#contact
+.map
 {
-	position: relative;
 	width: 100%;
 	height: 800px;
+	background-color: rgb(52,145,178);
+	position: absolute;
+	
 }
 
-#contact iframe
+iframe
 {
-	position: absolute;
+	
 	width: 100%;
 	height: 800px;
 	border: 0;   
+	opacity: 0.7;
 }
 
 /* CONTACT FORMULAIRE */
 
 .formulaire
 {
-	position: absolute;
-	width: 100%;
+	
 	height: 800px;
 	border-radius: 10px;
-	background-color: rgba(52, 145, 178, 0.3);
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: end;
-	    -ms-flex-pack: end;
-	        justify-content: flex-end;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
+	position: absolute;
+	right: 100px;
 }
 
 .formulaire h2
@@ -552,10 +548,10 @@ form
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	background: rgba(255, 255, 255, 0.7);
-	margin-right: 10%;
 	width: 350px;
 	padding: 15px;
 	border-radius: 5px;
+	
 }
 
 input
@@ -618,7 +614,6 @@ input, textarea
 
 form {
 	margin-right: 5%;
-	width: 300px;
 }
 
 h1 {
@@ -664,15 +659,39 @@ h1 {
 	}
 
 	form{
-		position: relative;
-		top: 700px;
-		margin: 0 auto;
-		background-color: rgba(52, 145, 178, 0.4);
+		
+		background-color: grey;
+		position: absolute;
+		margin-right: 0%;
 	}
 
 	#contact{
-		height: 800px;
+		
+		position: relative;
+	
 	}
+
+	.formulaire{
+		position: relative;
+		justify-content: center;
+		width: 100%;
+		height: 540px;
+		right: 0px;
+		color: black;
+	}
+
+	footer{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.map{
+		position: relative;
+	}
+
+
+
 }
 
 @media all and (max-width: 555px) {
@@ -712,19 +731,14 @@ h1 {
 	#portfolio nav ul li{
 		width: 50%;
 		margin: auto;
-		border-radius: 10px;
 	}
 
-	#portfolio nav ul li:nth-child(1),#Portfolio nav ul li:nth-child(4) {
+	#portfolio ul li:nth-child(1), #portfolio ul li:nth-child(2), #portfolio ul li:nth-child(3), #portfolio ul li:nth-child(4){
 		border-radius: 10px;
 	}
 
 	#portfolio nav{
 		margin: auto;
-	}
-
-	form{
-		margin: 0 auto;
 	}
 
 	.details_services{
@@ -733,7 +747,8 @@ h1 {
 	}
 
 	form{
-		width: 100%;
+		width: 95%;
+		padding: 15px;
 	}
 }
 
